@@ -1,25 +1,15 @@
-
 var fullName = "Rod Stephen Espiritu";
-
-
 var h1Element = document.createElement("h1");
-
-
 h1Element.innerText = fullName;
-
-
 h1Element.style.textAlign = "center";
 h1Element.style.color = "#A9A9A9";
 
-
 document.body.appendChild(h1Element);
-
 
 var container = document.createElement("div");
 container.style.display = "flex";
 container.style.flexDirection = "column";
 container.style.alignItems = "center";
-
 
 var input1 = createInput("Box Number 1");
 var input2 = createInput("Box Number 2");
@@ -73,12 +63,12 @@ var validateNumber = (input) => {
 
 // Arrow function to calculate sum
 function calculateSum() {
-   
+
     input1.style.border = "";
     input2.style.border = "";
 
     try {
-    
+
         validateNumber(input1);
         validateNumber(input2);
         var num1 = parseFloat(input1.value);
